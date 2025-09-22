@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-md-center"">
+        <div class="col  d-none d-md-block">
+            <div class="img-fluid">
+                <img src="../static/images/login2_svg.png" alt="login svg" class=" img-fluid">
+            </div>
+        </div>
+        <div class="col">
+            <div class="header mb-2">
+                <h2 class="login_h1">Register</h2>
+                <p class="muted sm">JOIN US</p>
+            </div>
+            <!-- <div class="form-control login-div"> -->
+                <form action="">
+                    <div class="mb-2">
+                        <label class="form-label" for="name">Full name</label>
+                        <input name="name" type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input name="email" type="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label" for="password">Password:</label>
+                        <input name="password" type="password" class="form-control" required>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label" for="confirm_password">Confirm Password</label>
+                        <input name="confirm_password" type="password" class="form-control" required>
+                    </div>
+
+
+                    <div class="mb-2">
+                        <button class="btn btn-lg btn-secondary login_button" type="submit">REGISTER</button>
+                    </div>
+                    <p class="muted">ALREADY REGISTERED ?<a href="{{ url_for('login') }}"
+                            class="text-decoration-none login_h1"> LOGIN</a></p>
+                </form>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+{% endblock %}

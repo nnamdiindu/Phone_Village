@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Village</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <style>
+        :root {
+            --phone_village-brown: #a85b31;
+            --phone_village-dark-brown: #5b2a13;
+            --swoo-light-gray: #f8f9fa;
+        }
+
+        .login-div {
+            border: none;
+        }
+        
+        .top-bar {
+            background-color: var(--swoo-light-gray);
+            padding: 8px 0;
+            font-size: 14px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--phone_village-brown) !important;
+        }
+        
+        .brand-logo {
+            width: 100px;
+            height: 70px;
+            /* background-color: var(--phone_village-brown); */
+            /* border-radius: 10%; */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        
+        .brand-logo i {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .navbar-nav .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            margin: 0 15px;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--phone_village-brown) !important;
+        }
+        
+        .search-section {
+            background: linear-gradient(135deg, var(--phone_village-brown), var(--phone_village-dark-brown));
+            padding: 20px 0;
+        }
+        
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-input-group {
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .category-dropdown {
+            background-color: white;
+            border: none;
+            padding: 12px 20px;
+            font-weight: 500;
+        }
+        
+        .search-input {
+            border: none;
+            padding: 12px 20px;
+            flex: 1;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        .search-btn {
+            background-color: var(--phone_village-brown);
+            border: none;
+            padding: 12px 20px;
+            color: white;
+        }
+        
+        .search-btn:hover {
+            background-color: #5b2a13;
+        }
+        
+        .features-bar {
+            background-color: var(--phone_village-brown);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        
+        .feature-item {
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .cart-info {
+            color: var(--phone_village-brown);
+            font-weight: bold;
+        }
+        
+        .cart-count {
+            background-color: var(--phone_village-brown);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        
+        .user-actions {
+            font-size: 12px;
+            color: #6c757d;
+        }
+        
+        .dropdown-toggle::after {
+            margin-left: 8px;
+        }
+
+        .login_h1 {
+            color: var(--phone_village-brown);
+        }
+
+        .login_button {
+            background-color: var(--phone_village-brown);
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+                margin-top: 15px;
+            }
+            
+            .search-container {
+                margin: 0 15px;
+            }
+            
+            .features-bar .col-12 {
+                margin-bottom: 10px;
+            }
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 60px 0 40px 0;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .footer-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .footer-links a {
+            color: #6c757d;
+            text-decoration: none;
+            display: block;
+            padding: 4px 0;
+            font-size: 14px;
+        }
+        
+        .footer-links a:hover {
+            color: #a85b31;
+        }
+        
+        .hotline {
+            color: #a85b31;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .social-icons a {
+            color: #6c757d;
+            margin-right: 15px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .social-icons a:hover {
+            color: #a85b31;
+        }
+        
+        
+        .footer-address {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .footer-email {
+            color: #6c757d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- <div class="col-md-6">
+                    <span class="me-4">
+                        <i class="fas fa-phone"></i> Hotline 24/7 +234 702 601 9397
+                    </span>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-decoration-none me-3">Order Tracking</a>
+                    <div class="dropdown d-inline-block me-3">
+                        <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-dollar-sign"></i> USD
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">GBP</a></li>
+                        </ul>
+                    </div> 
+                    <div class="dropdown d-inline-block">
+                        <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-flag-usa"></i> Eng
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Spanish</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="brand-logo">
+                    <img class="img-fluid" src="../static/images/phone_village.png" alt="phone village logo">
+                </div>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-bs-toggle="dropdown">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PAGES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <!-- Wishlist -->
+                    <a href="#" class="text-decoration-none me-4">
+                        <i class="far fa-heart fs-5"></i>
+                    </a>
+
+                    <!-- User Account -->
+                    <div class="text-center me-4">
+                        <div class="user-actions">WELCOME</div>
+                        <a href="#" class="text-decoration-none">
+                            <strong>LOG IN / REGISTER</strong>
+                        </a>
+                    </div>
+
+                    <!-- Cart -->
+                    <div class="text-center">
+                        <div class="cart-info">
+                            CART
+                            <span class="cart-count">5</span>
+                        </div>
+                        <div class="fw-bold">₦1,689.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="input-group search-input-group">
+                    <select class="form-select category-dropdown" style="max-width: 200px;">
+                        <option selected>All Categories</option>
+                        <option value="laptops">Laptops</option>
+                        <option value="phones">Smartphones</option>
+                        <option value="tablets">Tablets</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                    <input type="text" class="form-control search-input" placeholder="Search anything...">
+                    <button class="btn search-btn" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Bar -->
+    <div class="features-bar">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-4 feature-item">
+                    <i class="fas fa-shipping-fast me-2"></i>
+                    FREE SHIPPING OVER ₦200K
+                </div>
+                <div class="col-12 col-md-4 feature-item">
+                    <i class="fas fa-undo me-2"></i>
+                    30 DAYS MONEY BACK
+                </div>
+                <div class="col-12 col-md-4 feature-item">
+                    <i class="fas fa-shield-alt me-2"></i>
+                    100% SECURE PAYMENT
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+
+
+    <!-- Main Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">PHONE VILLAGE - 1ST NSUKKA GADGETS ONLINE STORE</h5>
+                    <p class="text-muted small mb-3">HOTLINE 24/7</p>
+                    <div class="hotline">+234 702 601 9397</div>
+                    <div class="footer-address">
+                        No. 64 Owerre-Ani, Enugu Road, Nsukka,<br>
+                        Enugu State
+                    </div>
+                    <div class="footer-email">contact@phone-village.com</div>
+                    
+                    <!-- Social Icons -->
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Top Categories -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">TOP CATEGORIES</h6>
+                    <div class="footer-links">
+                        <a href="#">Laptops</a>
+                        <a href="#">PC & Computers</a>
+                        <a href="#">Cell Phones</a>
+                        <a href="#">Tablets</a>
+                        <a href="#">Gaming & VR</a>
+                        <a href="#">Networks</a>
+                        <a href="#">Cameras</a>
+                        <a href="#">Sounds</a>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">COMPANY</h6>
+                    <div class="footer-links">
+                        <a href="#">About Phone Village</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Career</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">Store Locations</a>
+                    </div>
+                </div>
+
+                <!-- Help Center -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">HELP CENTER</h6>
+                    <div class="footer-links">
+                        <a href="#">Customer Service</a>
+                        <a href="#">Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Track Order</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">My Account</a>
+                        <a href="#">Product Support</a>
+                    </div>
+                </div>
+
+                <!-- Partner -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">PARTNER</h6>
+                    <div class="footer-links">
+                        <a href="#">Become Seller</a>
+                        <a href="#">Affiliate</a>
+                        <a href="#">Advertise</a>
+                        <a href="#">Partnership</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>                      
+
+
+    
+    <script>
+        // Add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Search functionality
+            const searchBtn = document.querySelector('.search-btn');
+            const searchInput = document.querySelector('.search-input');
+            
+            searchBtn.addEventListener('click', function() {
+                const query = searchInput.value.trim();
+                if (query) {
+                    alert(`Searching for: ${query}`);
+                }
+            });
+            
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchBtn.click();
+                }
+            });
+            
+            // Cart animation
+            const cartInfo = document.querySelector('.cart-info');
+            cartInfo.addEventListener('click', function() {
+                this.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
