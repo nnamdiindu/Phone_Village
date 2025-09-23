@@ -5,72 +5,103 @@
 
 {% block content %}
 
-<div class="container mt-5">
-    <div class="row justify-content-md-center">
-        <div class="col-2 profile-pic-div">
-            <div class="bg-secondary rounded">
-                <img src="../static/images/avatar.jpg.png" alt="user picture" class="img-fluid">
-            </div>
-            <div>
-                <h3>Lucky Odi</h3>
-                <p>lucky@gmail.com</p>
-            </div>
-            <div>
-                <div class="bg-success active p-2 rounded m-1"><a href="#" class="text-decoration-none text-white">Account info</a></div>
-                <div class="p-2 rounded m-1"><a href="#" class="text-decoration-none text-dark">My Order</a></div>
-                <div class="p-2 rounded m-1"><a href="#" class="text-decoration-none text-dark">My Address</a></div>
-                <div class="p-2 rounded m-1"><a href="#" class="text-decoration-none text-dark">Change Password</a></div>
-            </div>
-
-        </div>
-        <div class="col-1 bg-warning">
-            middle
-        </div>
-        <div class="col-9">
-            <h3>Account Info</h3>
-            
-          <div class="col-12 col-md-10 col-lg-8">
-            <div class="form-container">
+<div class="container">
+    <div class="container-fluid py-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <!-- Profile Avatar -->
+                        <div class="mb-3">
+                            <div class="bg-secondary rounded d-inline-flex align-items-center justify-content-center" 
+                                 style="width: 120px; height: 120px;">
+                                <img src="../static/images/avatar.jpg.png" alt="user picture" class="img-fluid">
+                            </div>
+                        </div>
+                        
+                        <!-- Name and Email -->
+                        <h5 class="card-title mb-1">Mark Cole</h5>
+                        <p class="text-muted small">swoo@gmail.com</p>
+                    </div>
+                </div>
                 
-                <form id="contactForm" action="/" method="post">
-                    <!-- Row 1: Name and Email -->
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control p-3" id="name" name="name" placeholder="Full name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control p-3" id="email" name="email" placeholder="Your email address" required>
-                        </div>
+                <!-- Navigation Menu -->
+                <div class="card shadow-sm mt-3">
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action phone-village-bg text-white d-flex justify-content-between align-items-center">
+                            <span>Account info</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <span>My order</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <span>My address</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <span>Change password</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    
-                    <!-- Row 2: Phone and Budget -->
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <input type="tel" class="form-control p-3" id="phone" name="phone" placeholder="Phone number">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control p-3" id="budget" name="budget" placeholder="Budget">
-
-                        </div>
-                    </div>
-                    
-                    <!-- Row 3: Message (standalone) -->
-                    <div class="row mb-4">
-                        <div class="col-12">
-                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
-                        </div>
-                    </div>
-                    
-                    <!-- Submit Button -->
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-success btn-submit">Submit</button>
-                    </div>
-                </form>
+                </div>
             </div>
-        </div>  
-
+            
+            <!-- Main Content -->
+            <div class="col-lg-9 col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">Account Info</h4>
+                        
+                        <form>
+                            <div class="row">
+                                <!-- First Name -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">
+                                        First Name <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control form-control-lg" id="firstName" value="Mark">
+                                </div>
+                                
+                                <!-- Last Name -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">
+                                        Last Name <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control form-control-lg" id="lastName" value="Cole">
+                                </div>
+                            </div>
+                            
+                            <!-- Email Address -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Email Address <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control form-control-lg" id="email" value="swoo@gmail.com">
+                            </div>
+                            
+                            <!-- Phone Number -->
+                            <div class="mb-4">
+                                <label for="phone" class="form-label">
+                                    Phone Number <span class="text-muted">(Optional)</span>
+                                </label>
+                                <input type="tel" class="form-control form-control-lg" id="phone" value="+1 0231 4554 452">
+                            </div>
+                            
+                            <!-- Save Button -->
+                            <button type="submit" class="btn btn-lg px-4 phone-village-bg text-white">SAVE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
 </div>
+
 
 {% endblock %}
