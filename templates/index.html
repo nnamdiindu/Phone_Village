@@ -1,35 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container-fluid">
-        <div class="row">
+<div class="container">
+
+
+    <div class="container-fluid">
+        <div class="row g-3">
+
             <!-- Sidebar -->
-            <div class="col-md-2 bg-white p-3 min-vh-100">
-                <div class="mb-3  d-sm-none d-md-block">
-                    <span class="badge bg-danger fs-6 mb-3">SALE 40% OFF</span>
-                </div>
-                <nav class="nav flex-column">
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Laptops</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">PC & Computers</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Cell Phones</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Tablets</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Gaming & VR</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Networking</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Cameras</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Sounds</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Office</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Storage, USB</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Accessories</a>
-                    <a class="nav-link text-dark fw-bold py-2" href="#">Clearance</a>
-                </nav>
+            <div class="col-md-2 bg-white shadow-sm p-3 rounded">
+                <h6 class="text-danger fw-bold">SALE 40% OFF</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Laptops</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">PC & Computers</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Cell Phones</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Tablets</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Gaming & VR</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Networking</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Cameras</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Sounds</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Office</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Storage, USB</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Clearance</a></li>
+                </ul>
             </div>
 
-            <!-- Main Content -->
-            <div class="col-md-10 p-4">
-                <!-- Hero Section with Products -->
-                <div class="row mb-4">
-                    <!-- Main Hero Card -->
-                    <div class="col-md-6 mb-3">
-                        <div class="card bg-secondary text-white h-100 position-relative" style="background: linear-gradient(135deg, #8e9aaf, #cbd2d9);">
+            <!-- Main content -->
+            <div class="col-md-10">
+                <div class="row g-3">
+
+                    <!-- Headphone Banner -->
+                    <div class="col-md-8">
+                        <div class="card bg-secondary text-white h-100 position-relative"
+                            style="background: linear-gradient(135deg, #8e9aaf, #cbd2d9);">
                             <div class="card-body d-flex flex-column justify-content-center p-4">
                                 <h2 class="card-title display-6 fw-bold">Noise Cancelling</h2>
                                 <h3 class="card-title display-6 fw-light mb-3">Headphone</h3>
@@ -38,102 +41,73 @@
                                     <p class="mb-1">Wifi, Voice Assistant,</p>
                                     <p class="mb-3">Low Latency Game Mde</p>
                                 </div>
-                                <button class="btn btn-light text-dark fw-bold px-4 py-2 align-self-start">BUY NOW</button>
+                                <button class="btn btn-light text-dark fw-bold px-4 py-2 align-self-start">BUY
+                                    NOW</button>
                                 <div class="position-absolute bottom-0 end-0 p-3">
                                     <small>3 / 3</small>
                                 </div>
                             </div>
-                            <div class="position-absolute end-0 top-0 bottom-0 d-flex align-items-center" style="right: -20px;">
-                                <img src="../static/images/headphone-png.png" alt="Headphones" class="img-fluid" style="max-width: 400px;">
+                            <div class="position-absolute end-0 top-0 bottom-0 d-flex align-items-center"
+                                style="right: -20px;">
+                                <img src="../static/images/headphone-png.png" alt="Headphones" class="img-fluid"
+                                    style="max-width: 300px;">
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right Column -->
-                    <div class="col-md-6">
-                        <!-- Smart Watch -->
-                        <div class="row mb-3">
-                            <div class="col-12">
-                                <div class="card bg-light border-0 h-100">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="flex-grow-1">
-                                            <small class="text-muted">XOMIA</small>
-                                            <h5 class="fw-bold mb-0">Sport Water</h5>
-                                            <h5 class="fw-bold mb-2">Resistance</h5>
-                                            <h5 class="fw-bold">Watch</h5>
-                                        </div>
-                                        <div class="text-center me-3">
-                                            <img src="https://via.placeholder.com/80x80/000000/ffffff?text=Watch" alt="Smart Watch" class="img-fluid rounded">
-                                            <div class="badge bg-success rounded-circle p-2 mt-1">
-                                                <i class="fas fa-check text-white"></i>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-dark px-3">SHOP NOW</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- OKODO Hero -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card bg-dark text-white h-100">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="flex-grow-1">
-                                            <h3 class="fw-bold">OKODO</h3>
-                                            <h4 class="fw-bold">HERO 11+</h4>
-                                            <h4 class="fw-bold mb-3">BLACK</h4>
-                                            <small class="text-muted">FROM</small>
-                                            <h3 class="text-success fw-bold">$169</h3>
-                                        </div>
-                                        <div>
-                                            <img src="https://via.placeholder.com/120x80/333333/ffffff?text=Camera" alt="Action Camera" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Cards Row -->
-                <div class="row mb-5">
-                    <!-- Sono Playgo 5 -->
-                    <div class="col-md-3 mb-3">
-                        <div class="card h-100">
+                    <!-- Smartwatch -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="../static/images/smart-watch.jpeg" class="card-img-top" alt="Watch">
                             <div class="card-body">
-                                <div class="text-center mb-3">
-                                    <img src="https://via.placeholder.com/150x100/f8f9fa/666666?text=Console" alt="Sono Playgo" class="img-fluid">
-                                </div>
-                                <h6 class="fw-bold">Sono Playgo 5</h6>
-                                <p class="text-success fw-bold mb-2">from $569</p>
-                                <a href="#" class="text-decoration-none text-dark fw-bold">
-                                    <u>DISCOVER NOW</u>
-                                </a>
+                                <h6 class="fw-bold">XOMIA</h6>
+                                <p class="mb-1">Sport Water Resistance Watch</p>
+                                <a href="#" class="btn btn-dark btn-sm">Shop Now</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Logitek Keyboard -->
-                    <div class="col-md-3 mb-3">
-                        <div class="card h-100" style="background: linear-gradient(135deg, #8e9aaf, #cbd2d9);">
-                            <div class="card-body text-white">
-                                <h6 class="fw-bold text-warning">Logitek Bluetooth</h6>
-                                <h6 class="fw-bold text-warning mb-3">Keyboard</h6>
-                                <p class="small">Best for all device</p>
-                                <div class="text-center mt-3">
-                                    <img src="https://via.placeholder.com/120x60/666666/ffffff?text=Keyboard" alt="Keyboard" class="img-fluid">
-                                </div>
+                    <!-- Playgo Console -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="../static/images/ps5.jpg" class="card-img-top img-fluid" alt="Playgo">
+                            <div class="card-body">
+                                <h6>Sono Playgo 5</h6>
+                                <p class="mb-1 text-success">From $569</p>
+                                <a href="#" class="text-decoration-none small fw-bold">Discover Now</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Empty spaces for layout -->
-                    <div class="col-md-6"></div>
+                    <!-- Bluetooth Keyboard -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="../static/images/keyboard.jpg" class="card-img-top" alt="Keyboard">
+                            <div class="card-body">
+                                <h6>Logitek Bluetooth <span class="text-warning">Keyboard</span></h6>
+                                <p>Best for all device</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GoPro Camera -->
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-white shadow-sm">
+                            <img src="../static/images/camera.jpeg" class="card-img-top" alt="GoPro">
+                            <div class="card-body">
+                                <h6 class="fw-bold">OKODO HERO 11+ BLACK</h6>
+                                <p>From <span class="text-success">$169</span></p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
 
-                <!-- Brands and Categories Section -->
-                <div class="row">
+        </div>
+    </div>
+    <!-- Brands and Categories Section -->
+                <div class="row mt-5">
                     <!-- Featured Brands -->
                     <div class="col-md-6 mb-4">
                         <div class="d-flex justify-content-between align-items-center mb-3">
@@ -236,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 {% endblock %}
