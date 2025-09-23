@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block link %}
+<link rel="stylesheet" href="../static/css/profile.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-2 profile-pic-div">
+            <div class="bg-secondary rounded">
+                <img src="../static/images/avatar.jpg.png" alt="user picture" class="img-fluid">
+            </div>
+            <div>
+                <h3>Lucky Odi</h3>
+                <p>lucky@gmail.com</p>
+            </div>
+            <div>
+                <div class="bg-success active p-2 rounded m-1"><a href="#" class="text-decoration-none text-white">Account info</a></div>
+                <div class="p-2 rounded m-1"><a href="#" class="text-decoration-none text-dark">My Order</a></div>
+                <div class="p-2 rounded m-1"><a href="#" class="text-decoration-none text-dark">My Address</a></div>
+                <div class="p-2 rounded m-1"><a href="#" class="text-decoration-none text-dark">Change Password</a></div>
+            </div>
+
+        </div>
+        <div class="col-1 bg-warning">
+            middle
+        </div>
+        <div class="col-9">
+            <h3>Account Info</h3>
+            
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="form-container">
+                
+                <form id="contactForm" action="/" method="post">
+                    <!-- Row 1: Name and Email -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control p-3" id="name" name="name" placeholder="Full name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control p-3" id="email" name="email" placeholder="Your email address" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 2: Phone and Budget -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control p-3" id="phone" name="phone" placeholder="Phone number">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control p-3" id="budget" name="budget" placeholder="Budget">
+
+                        </div>
+                    </div>
+                    
+                    <!-- Row 3: Message (standalone) -->
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
