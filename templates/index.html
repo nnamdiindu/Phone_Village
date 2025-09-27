@@ -1,23 +1,37 @@
 {% extends "base.html" %}
 {% block style %}
- <style>
+<style>
     /* quick theme override */
-    .bg-brand { background-color: #a85b31 !important; }
-    .text-brand { color: #a85b31 !important; }
-    .btn-brand { background-color: #a85b31; color: #fff; }
-    .btn-brand:hover { background-color: #8d4a2a; color: #fff; }
-    .progress-bar { background-color: #a85b31; }
-  </style>
+    .bg-brand {
+        background-color: #a85b31 !important;
+    }
+
+    .text-brand {
+        color: #a85b31 !important;
+    }
+
+    .btn-brand {
+        background-color: #a85b31;
+        color: #fff;
+    }
+
+    .btn-brand:hover {
+        background-color: #8d4a2a;
+        color: #fff;
+    }
+
+    .progress-bar {
+        background-color: #a85b31;
+    }
+</style>
 {% endblock %}
 {% block content %}
 <div class="container">
-
-
     <div class="container-fluid">
         <div class="row g-3">
 
             <!-- Sidebar -->
-            <div class="col-md-2 bg-white shadow-sm p-3 rounded">
+            <div class="col-md-2 bg-white shadow-sm p-3 rounded border-0 shadow-sm">
                 <h6 class="text-danger fw-bold">SALE 40% OFF</h6>
                 <ul class="nav flex-column">
                     <li class="nav-item"><a class="nav-link text-dark" href="#">Laptops</a></li>
@@ -41,7 +55,7 @@
 
                     <!-- Headphone Banner -->
                     <div class="col-md-8">
-                        <div class="card bg-secondary text-white h-100 position-relative"
+                        <div class="card bg-secondary text-white h-100 position-relative border-0 shadow-sm"
                             style="background: linear-gradient(135deg, #8e9aaf, #cbd2d9);">
                             <div class="card-body d-flex flex-column justify-content-center p-4">
                                 <h2 class="card-title display-6 fw-bold">Noise Cancelling</h2>
@@ -51,7 +65,7 @@
                                     <p class="mb-1">Wifi, Voice Assistant,</p>
                                     <p class="mb-3">Low Latency Game Mde</p>
                                 </div>
-                                <button class="btn btn-light text-dark fw-bold px-4 py-2 align-self-start">BUY
+                                <button class="btn phone-village-bg text-white fw-bold px-4 py-2 align-self-start">BUY
                                     NOW</button>
                                 <div class="position-absolute bottom-0 end-0 p-3">
                                     <small>3 / 3</small>
@@ -67,19 +81,19 @@
 
                     <!-- Smartwatch -->
                     <div class="col-md-4">
-                        <div class="card shadow-sm">
+                        <div class="card border-0 shadow-sm">
                             <img src="../static/images/smart-watch.jpeg" class="card-img-top" alt="Watch">
                             <div class="card-body">
                                 <h6 class="fw-bold">XOMIA</h6>
                                 <p class="mb-1">Sport Water Resistance Watch</p>
-                                <a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+                                <a href="#" class="btn phone-village-bg border-0 text-white btn-sm">Shop Now</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Playgo Console -->
                     <div class="col-md-4">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm border-0">
                             <img src="../static/images/ps5.jpg" class="card-img-top img-fluid" alt="Playgo">
                             <div class="card-body">
                                 <h6>Sono Playgo 5</h6>
@@ -91,7 +105,7 @@
 
                     <!-- Bluetooth Keyboard -->
                     <div class="col-md-4">
-                        <div class="card shadow-sm">
+                        <div class="card border-0 shadow-sm">
                             <img src="../static/images/keyboard.jpg" class="card-img-top" alt="Keyboard">
                             <div class="card-body">
                                 <h6>Logitek Bluetooth <span class="text-warning">Keyboard</span></h6>
@@ -102,7 +116,7 @@
 
                     <!-- GoPro Camera -->
                     <div class="col-md-4">
-                        <div class="card bg-dark text-white shadow-sm">
+                        <div class="card bg-dark text-white border-0 shadow-sm">
                             <img src="../static/images/camera.jpeg" class="card-img-top" alt="GoPro">
                             <div class="card-body">
                                 <h6 class="fw-bold">OKODO HERO 11+ BLACK</h6>
@@ -120,58 +134,58 @@
     <div class="row mt-5">
         <!-- Featured Brands -->
         <div class="col-md-6 mb-4">
-            <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-3 border-0 shadow-sm">
                 <h4 class="fw-bold">FEATURED BRANDS</h4>
                 <a href="#" class="text-muted">View All</a>
             </div>
             <div class="row g-3">
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo1.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo2.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo3.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo4.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo5.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo6.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo7.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo8.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo9.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-white p-3 text-center rounded shadow-sm">
+                    <div class="bg-white p-3 text-center rounded border-0 shadow-sm">
                         <img src="../static/images/logo10.png" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -180,13 +194,13 @@
 
         <!-- Top Categories -->
         <div class="col-md-6 mb-4">
-            <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-3 border-0 shadow-sm">
                 <h4 class="fw-bold">TOP CATEGORIES</h4>
                 <a href="#" class="text-muted">View All</a>
             </div>
             <div class="row g-3">
                 <div class="col-6">
-                    <div class="card text-center">
+                    <div class="card text-center border-0 shadow-sm">
                         <div class="card-body">
                             <img src="../static/images/laptop.png" alt="" class="img-fluid">
                             <h6 class="fw-bold">Laptops</h6>
@@ -194,7 +208,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card text-center">
+                    <div class="card text-center border-0 shadow-sm">
                         <div class="card-body">
                             <img src="../static/images/pc-gaming.png" alt="" class="img-fluid">
                             <h6 class="fw-bold">PC Gaming</h6>
@@ -202,7 +216,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card text-center">
+                    <div class="card text-center border-0 shadow-sm">
                         <div class="card-body">
                             <img src="../static/images/headphone.png" alt="" class="img-fluid">
                             <h6 class="fw-bold">Headphones</h6>
@@ -210,7 +224,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card text-center">
+                    <div class="card text-center border-0 shadow-sm">
                         <div class="card-body">
                             <img src="../static/images/monitor.png" alt="" class="img-fluid">
                             <h6 class="fw-bold">Monitors</h6>
@@ -223,97 +237,260 @@
 
     <!-- Deal of the Day section -->
     <div class="py-5">
-  <div class="row g-4">
-    <!-- Left side product -->
-    <div class="col-lg-8">
-      <div class="card shadow-sm rounded-4">
-        <div class="card-header bg-brand text-white fw-bold">
-          DEALS OF THE DAY
+        <div class="row g-4">
+            <!-- Left side product -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-header bg-brand text-white fw-bold">
+                        DEALS OF THE DAY
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-4">
+                            <!-- Product thumbnails -->
+                            <div class="col-md-1 d-flex flex-column align-items-center">
+                                <img src="https://via.placeholder.com/70x120" class="img-fluid mb-2 border rounded"
+                                    alt="">
+                                <img src="https://via.placeholder.com/70x120" class="img-fluid mb-2 border rounded"
+                                    alt="">
+                                <img src="https://via.placeholder.com/70x120" class="img-fluid mb-2 border rounded"
+                                    alt="">
+                            </div>
+
+                            <!-- Main product image -->
+                            <div class="col-md-5 text-center">
+                                <img src="../static/images/mobile-promo.png" class="img-fluid" alt="">
+                                <div class="badge bg-brand text-white mt-3">SAVE $199.00</div>
+                            </div>
+
+                            <!-- Product details -->
+                            <div class="col-md-6">
+                                <h6 class="text-muted">(12)</h6>
+                                <h5 class="fw-bold">Xioma Redmi Note 11 Pro 256GB 2023, Black Smartphone</h5>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <h4 class="fw-bold text-danger mb-0 me-2">$569.00</h4>
+                                    <span class="text-muted text-decoration-line-through">$759.00</span>
+                                </div>
+
+                                <ul class="list-unstyled small mb-3">
+                                    <li>• Intel LGA 1700 Socket: Supports 13th & 12th Gen Intel Core</li>
+                                    <li>• DDR5 Compatible: 4*SMD DIMMs with XMP 3.0 Memory</li>
+                                    <li>• Commanding Power Design: Twin 16+1+2 Phases Digital VRM</li>
+                                </ul>
+
+                                <div class="mb-3">
+                                    <span class="badge bg-success">FREE SHIPPING</span>
+                                    <span class="badge bg-danger">FREE GIFT</span>
+                                </div>
+
+                                <p class="fw-bold mb-1">HURRY UP! PROMOTION WILL EXPIRE IN</p>
+                                <div class="d-flex gap-2 mb-3">
+                                    <div class="border rounded p-2 text-center">
+                                        <div class="fw-bold">162</div><small>d</small>
+                                    </div>
+                                    <div class="border rounded p-2 text-center">
+                                        <div class="fw-bold">9</div><small>h</small>
+                                    </div>
+                                    <div class="border rounded p-2 text-center">
+                                        <div class="fw-bold">2</div><small>m</small>
+                                    </div>
+                                    <div class="border rounded p-2 text-center">
+                                        <div class="fw-bold">34</div><small>s</small>
+                                    </div>
+                                </div>
+
+                                <div class="progress mb-1" style="height:8px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 35%;"></div>
+                                </div>
+                                <small class="text-muted">Sold: 26/75</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side promos -->
+            <div class="col-lg-4">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="card rounded-4 border-0 shadow-sm">
+                            <img src="../static/images/game-promo.png" class="card-img" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card rounded-4 border-0 shadow-sm">
+                            <img src="../static/images/phone-promo.png" class="card-img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+
+
+
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mb-4">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">BEST SELLER</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">NEW IN</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">POPULAR</a>
+    </li>
+    <li class="ms-auto nav-item">
+      <a class="nav-link" href="#">View All</a>
+    </li>
+  </ul>
+
+  <!-- Products Grid -->
+  <div class="row row-cols-1 row-cols-md-5 g-4">
+    
+    <!-- Product 1 -->
+    <div class="col">
+      <div class="card h-100 text-center p-3 border-0 shadow-sm">
+        <img src="../static/images/headphone-white.png" class="card-img-top" alt="Product Image" style="height:150px; object-fit:contain;">
         <div class="card-body">
-          <div class="row g-4">
-            <!-- Product thumbnails -->
-            <div class="col-md-1 d-flex flex-column align-items-center">
-              <img src="https://via.placeholder.com/70x120" class="img-fluid mb-2 border rounded" alt="">
-              <img src="https://via.placeholder.com/70x120" class="img-fluid mb-2 border rounded" alt="">
-              <img src="https://via.placeholder.com/70x120" class="img-fluid mb-2 border rounded" alt="">
-            </div>
-
-            <!-- Main product image -->
-            <div class="col-md-5 text-center">
-              <img src="../static/images/mobile-promo.png" class="img-fluid" alt="">
-              <div class="badge bg-brand text-white mt-3">SAVE $199.00</div>
-            </div>
-
-            <!-- Product details -->
-            <div class="col-md-6">
-              <h6 class="text-muted">(12)</h6>
-              <h5 class="fw-bold">Xioma Redmi Note 11 Pro 256GB 2023, Black Smartphone</h5>
-
-              <div class="d-flex align-items-center mb-2">
-                <h4 class="fw-bold text-danger mb-0 me-2">$569.00</h4>
-                <span class="text-muted text-decoration-line-through">$759.00</span>
-              </div>
-
-              <ul class="list-unstyled small mb-3">
-                <li>• Intel LGA 1700 Socket: Supports 13th & 12th Gen Intel Core</li>
-                <li>• DDR5 Compatible: 4*SMD DIMMs with XMP 3.0 Memory</li>
-                <li>• Commanding Power Design: Twin 16+1+2 Phases Digital VRM</li>
-              </ul>
-
-              <div class="mb-3">
-                <span class="badge bg-success">FREE SHIPPING</span>
-                <span class="badge bg-danger">FREE GIFT</span>
-              </div>
-
-              <p class="fw-bold mb-1">HURRY UP! PROMOTION WILL EXPIRE IN</p>
-              <div class="d-flex gap-2 mb-3">
-                <div class="border rounded p-2 text-center">
-                  <div class="fw-bold">162</div><small>d</small>
-                </div>
-                <div class="border rounded p-2 text-center">
-                  <div class="fw-bold">9</div><small>h</small>
-                </div>
-                <div class="border rounded p-2 text-center">
-                  <div class="fw-bold">2</div><small>m</small>
-                </div>
-                <div class="border rounded p-2 text-center">
-                  <div class="fw-bold">34</div><small>s</small>
-                </div>
-              </div>
-
-              <div class="progress mb-1" style="height:8px;">
-                <div class="progress-bar" role="progressbar" style="width: 35%;"></div>
-              </div>
-              <small class="text-muted">Sold: 26/75</small>
-            </div>
-          </div>
+          <p class="text-muted">(152)</p>
+          <h6 class="card-title">BOSO 2 Wireless On Ear Headphone</h6>
+          <h5 class="fw-bold">$359.00</h5>
+          <span class="badge bg-success">FREE SHIPPING</span>
+          <span class="badge bg-danger">FREE GIFT</span>
+          <p class="mt-2 text-success">✔ In stock</p>
         </div>
       </div>
     </div>
 
-    <!-- Right side promos -->
-    <div class="col-lg-4">
-      <div class="row g-3">
-        <div class="col-12">
-          <div class="card rounded-4">
-            <img src="../static/images/game-promo.png" class="card-img" alt="">
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card rounded-4">
-            <img src="../static/images/laptop-promo.png" class="card-img" alt="">
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card rounded-4">
-            <img src="../static/images/phone-promo.png" class="card-img" alt="">
-          </div>
+    <!-- Product 2 -->
+    <div class="col">
+      <div class="card h-100 text-center p-3 border-0 shadow-sm">
+        <img src="../static/images/tablet.png" class="card-img-top" alt="Product Image" style="height:150px; object-fit:contain;">
+        <div class="card-body">
+          <span class="badge phone-village-bg mb-2">SAVE $199.00</span>
+          <p class="text-muted">(152)</p>
+          <h6 class="card-title">OPod Pro 12.9 Inch M1 2023, 64GB + Wifi, GPS</h6>
+          <h5 class="fw-bold text-danger">$569.00 
+            <small class="text-muted text-decoration-line-through">$759.00</small>
+          </h5>
+          <span class="badge bg-success">FREE SHIPPING</span>
+          <p class="mt-2 text-success">✔ In stock</p>
         </div>
       </div>
     </div>
+
+    <!-- Product 3 -->
+    <div class="col">
+      <div class="card h-100 text-center p-3 border-0 shadow-sm">
+        <img src="../static/images/decorder.png" class="card-img-top" alt="Product Image" style="height:150px; object-fit:contain;">
+        <div class="card-body">
+          <span class="badge phone-village-bg mb-2">SAVE $59.00</span>
+          <p class="text-muted">(8)</p>
+          <h6 class="card-title">uLosk Mini case 2.0, Xenon i10 / 32GB / SSD 512GB / VGA 8GB</h6>
+          <h5 class="fw-bold text-danger">$1,729.00 
+            <small class="text-muted text-decoration-line-through">$2,119.00</small>
+          </h5>
+          <span class="badge bg-success">FREE SHIPPING</span>
+          <p class="mt-2 text-danger">✘ Out of stock</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col">
+      <div class="card h-100 text-center p-3 border-0 shadow-sm">
+        <img src="../static/images/prod12.png.png" class="card-img-top" alt="Product Image" style="height:150px; object-fit:contain;">
+        <div class="card-body">
+          <p class="text-muted">(—)</p>
+          <h6 class="card-title">Opplo Watch Series 8 GPS + Cellular Stainless Steel Case with Milanese Loop</h6>
+          <h5 class="fw-bold">$979.00 - $1,259.00</h5>
+          <span class="badge bg-secondary">$2.98 SHIPPING</span>
+          <p class="mt-2 text-warning">PRE - ORDER</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col">
+      <div class="card h-100 text-center p-3 border-0 shadow-sm">
+        <img src="../static/images/charger.png" class="card-img-top" alt="Product Image" style="height:150px; object-fit:contain;">
+        <div class="card-body">
+          <span class="badge phone-village-bg mb-2">SAVE $3.00</span>
+          <p class="text-muted">(9)</p>
+          <h6 class="card-title">iSmart 24V Charger</h6>
+          <h5 class="fw-bold text-danger">$9.00 
+            <small class="text-muted text-decoration-line-through">$12.00</small>
+          </h5>
+          <span class="badge bg-secondary">$3.98 SHIPPING</span>
+          <p class="mt-2 text-muted">Contact</p>
+        </div>
+      </div>
+    </div>
+
   </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-{% endblock %}
+
+
+
+
+  <!-- Section Title -->
+  <h5 class="fw-bold mb-4 mt-5">BRAND NEW FOR YOU</h5>
+
+  <!-- Grid -->
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="../static/images/gaming-pc.png" class="card-img-top" alt="Product Image" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h6 class="fw-bold">Zumac Steel Computer Case</h6>
+          <p class="text-muted">And an option to upgrade every three years</p>
+          <a href="#" class="btn btn-outline-success btn-sm phone-village-bg text-white border-0">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="../static/images/curved-monitor.png" class="card-img-top" alt="Product Image" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h6 class="fw-bold">Summer Sale with Sale up to 50% OFF for Foam Gaming Chair.</h6>
+          <p class="text-muted">Limited time offer. Hurry up</p>
+          <a href="#" class="btn btn-outline-success btn-sm phone-village-bg text-white border-0">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="../static/images/office-chair.png" class="card-img-top" alt="Product Image" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h6 class="fw-bold">Summer Sale with Sale up to 50% OFF for Foam Gaming Chair.</h6>
+          <p class="text-muted">Limited time offer. Hurry up</p>
+          <a href="#" class="btn btn-outline-success btn-sm phone-village-bg text-white border-0">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="../static/images/ipad-mini.png" class="card-img-top" alt="Product Image" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h6 class="fw-bold">iPed Pro Mini 6 - Powerful in hand</h6>
+          <p class="text-muted">From $19.99/month for 36 months. $280.35 final payment due in month 37</p>
+          <a href="#" class="btn phone-village-bg btn-sm text-white border-0">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    {% endblock %}
