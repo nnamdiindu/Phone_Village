@@ -21,6 +21,14 @@ def register():
 def profile():
     return render_template("profile.html")
 
+@app.route("/product")
+def single_product():
+    return render_template("single-product.html")
+
+@app.route("/checkout")
+def checkout():
+    return render_template("checkout.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
