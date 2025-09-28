@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,10 @@
             --swoo-light-gray: #f8f9fa;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         .login-div {
             border: none;
         }
@@ -29,19 +34,19 @@
             height: auto;
             width: 80%;
         }
-        
+
         .top-bar {
             background-color: var(--swoo-light-gray);
             padding: 8px 0;
             font-size: 14px;
             border-bottom: 1px solid #dee2e6;
         }
-        
+
         .navbar-brand {
             font-weight: bold;
             color: var(--phone_village-brown) !important;
         }
-        
+
         .brand-logo {
             width: 100px;
             height: 70px;
@@ -52,84 +57,84 @@
             justify-content: center;
             margin-right: 10px;
         }
-        
+
         .brand-logo i {
             color: white;
             font-size: 20px;
         }
-        
+
         .navbar-nav .nav-link {
             color: #333 !important;
             font-weight: 500;
             margin: 0 15px;
         }
-        
+
         .navbar-nav .nav-link:hover {
             color: var(--phone_village-brown) !important;
         }
-        
+
         .search-section {
             background: linear-gradient(135deg, var(--phone_village-brown), var(--phone_village-dark-brown));
             padding: 20px 0;
         }
-        
+
         .search-container {
             max-width: 600px;
             margin: 0 auto;
         }
-        
+
         .search-input-group {
             border-radius: 25px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .category-dropdown {
             background-color: white;
             border: none;
             padding: 12px 20px;
             font-weight: 500;
         }
-        
+
         .search-input {
             border: none;
             padding: 12px 20px;
             flex: 1;
         }
-        
+
         .search-input:focus {
             outline: none;
             box-shadow: none;
         }
-        
+
         .search-btn {
             background-color: var(--phone_village-brown);
             border: none;
             padding: 12px 20px;
             color: white;
         }
-        
+
         .search-btn:hover {
             background-color: #5b2a13;
         }
-        
+
         .features-bar {
             background-color: var(--phone_village-brown);
             color: white;
             padding: 15px 0;
             text-align: center;
         }
-        
+
         .feature-item {
             font-weight: 500;
             font-size: 14px;
         }
-        
+
         .cart-info {
             color: var(--phone_village-brown);
             font-weight: bold;
         }
-        
+
         .cart-count {
             background-color: var(--phone_village-brown);
             color: white;
@@ -142,12 +147,12 @@
             font-size: 12px;
             margin-left: 5px;
         }
-        
+
         .user-actions {
             font-size: 12px;
             color: #6c757d;
         }
-        
+
         .dropdown-toggle::after {
             margin-left: 8px;
         }
@@ -169,17 +174,18 @@
             background-repeat: no-repeat;
             background-position: center right;
         }
-        
+
+
         @media (max-width: 768px) {
             .navbar-nav {
                 text-align: center;
                 margin-top: 15px;
             }
-            
+
             .search-container {
                 margin: 0 15px;
             }
-            
+
             .features-bar .col-12 {
                 margin-bottom: 10px;
             }
@@ -190,14 +196,14 @@
             padding: 60px 0 40px 0;
             border-top: 1px solid #e9ecef;
         }
-        
+
         .footer-title {
             font-weight: bold;
             font-size: 16px;
             margin-bottom: 20px;
             color: #333;
         }
-        
+
         .footer-links a {
             color: #6c757d;
             text-decoration: none;
@@ -205,36 +211,36 @@
             padding: 4px 0;
             font-size: 14px;
         }
-        
+
         .footer-links a:hover {
             color: #a85b31;
         }
-        
+
         .hotline {
             color: #a85b31;
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 15px;
         }
-        
+
         .social-icons a {
             color: #6c757d;
             margin-right: 15px;
             font-size: 20px;
             text-decoration: none;
         }
-        
+
         .social-icons a:hover {
             color: #a85b31;
         }
-        
-        
+
+
         .footer-address {
             color: #6c757d;
             font-size: 14px;
             margin-bottom: 15px;
         }
-        
+
         .footer-email {
             color: #6c757d;
             font-size: 14px;
@@ -242,6 +248,7 @@
     </style>
     {% block style %}{% endblock %}
 </head>
+
 <body>
     <!-- Top Bar -->
     <div class="top-bar">
@@ -274,9 +281,9 @@
                             <li><a class="dropdown-item" href="#">French</a></li>
                         </ul>
                     </div>-->
-                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Main Navigation -->
@@ -297,8 +304,8 @@
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" data-bs-toggle="dropdown">HOME</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PAGES</a>
@@ -311,9 +318,9 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTS</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Laptops</a></li>
-                            <li><a class="dropdown-item" href="#">Smartphones</a></li>
-                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            <li><a class="dropdown-item" href="#laptops">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#smartphones">Smartphones</a></li>
+                            <li><a class="dropdown-item" href="#accessories">Accessories</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -331,7 +338,7 @@
                     <!-- User Account -->
                     <div class="text-center me-4">
                         <div class="user-actions">WELCOME</div>
-                        <a href="#" class="text-decoration-none">
+                        <a href="{{ url_for('register') }}" class="text-decoration-none">
                             <strong>LOG IN / REGISTER</strong>
                         </a>
                     </div>
@@ -408,7 +415,7 @@
                         Enugu State
                     </div>
                     <div class="footer-email">contact@phone-village.com</div>
-                    
+
                     <!-- Social Icons -->
                     <div class="social-icons mt-3">
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -473,33 +480,33 @@
                 </div>
             </div>
         </div>
-    </footer>                      
+    </footer>
 
 
 
     <script>
         // Add some interactivity
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Search functionality
             const searchBtn = document.querySelector('.search-btn');
             const searchInput = document.querySelector('.search-input');
-            
-            searchBtn.addEventListener('click', function() {
+
+            searchBtn.addEventListener('click', function () {
                 const query = searchInput.value.trim();
                 if (query) {
                     alert(`Searching for: ${query}`);
                 }
             });
-            
-            searchInput.addEventListener('keypress', function(e) {
+
+            searchInput.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') {
                     searchBtn.click();
                 }
             });
-            
+
             // Cart animation
             const cartInfo = document.querySelector('.cart-info');
-            cartInfo.addEventListener('click', function() {
+            cartInfo.addEventListener('click', function () {
                 this.style.transform = 'scale(1.1)';
                 setTimeout(() => {
                     this.style.transform = 'scale(1)';
@@ -507,5 +514,8 @@
             });
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
