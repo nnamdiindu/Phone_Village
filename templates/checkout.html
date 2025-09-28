@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block content %}
+     <div class="container py-4">
+        <div class="row">
+            <!-- Left Column - Checkout Form -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <!-- Page Title -->
+                        <h2 class="h3 fw-bold mb-4">CHECKOUT</h2>
+                        
+                        <!-- Top Row - Login and Coupon -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <div class="alert alert-light border mb-0">
+                                    <span class="text-muted">Returning customer? </span>
+                                    <a href="#" class="text-danger text-decoration-none">Click here to log in</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="alert alert-light border mb-0">
+                                    <span class="text-muted">Have a coupon? </span>
+                                    <a href="#" class="text-danger text-decoration-none">Click here to enter your code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Billing Detail -->
+                        <h4 class="h5 fw-bold mb-4">Billing Detail</h4>
+                        
+                        <form>
+                            <!-- Name Row -->
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Company Name -->
+                            <div class="mb-3">
+                                <label class="form-label">Company Name <span class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                            
+                            <!-- Country/Region -->
+                            <div class="mb-3">
+                                <label class="form-label">Country / Region <span class="text-danger">*</span></label>
+                                <select class="form-select" required>
+                                    <option selected>United States (US)</option>
+                                    <option value="ca">Canada</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Street Address -->
+                            <div class="mb-3">
+                                <label class="form-label">Street Address</label>
+                                <input type="text" class="form-control mb-2" placeholder="House number and street name ...">
+                                <input type="text" class="form-control" placeholder="Apartment, suite, unit, etc (Optional)">
+                            </div>
+                            
+                            <!-- Town/City -->
+                            <div class="mb-3">
+                                <label class="form-label">Town / City <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            
+                            <!-- State/County -->
+                            <div class="mb-3">
+                                <label class="form-label">State / County <span class="text-danger">*</span></label>
+                                <select class="form-select" required>
+                                    <option selected>Washington</option>
+                                    <option value="ca">California</option>
+                                    <option value="ny">New York</option>
+                                    <option value="tx">Texas</option>
+                                </select>
+                            </div>
+                            
+                            
+                            <!-- Phone Number -->
+                            <div class="mb-3">
+                                <label class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            
+                            <!-- Email Address -->
+                            <div class="mb-3">
+                                <label class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            
+                            <!-- Create Account -->
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="createAccount">
+                                <label class="form-check-label" for="createAccount">
+                                    Create an account?
+                                </label>
+                            </div>
+                            
+                            <!-- Additional Information -->
+                            <h4 class="h5 fw-bold mb-3">Additional Information</h4>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Order Notes <span class="text-muted">(Optional)</span></label>
+                                <textarea class="form-control" rows="4" placeholder="Note about your order, e.g. special note for delivery"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - Order Summary -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-bottom">
+                        <h4 class="h5 fw-bold mb-0">Your Order</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- Product Header -->
+                        <div class="row mb-3 pb-2 border-bottom">
+                            <div class="col-6">
+                                <span class="fw-semibold text-muted">PRODUCT</span>
+                            </div>
+                            <div class="col-6 text-end">
+                                <span class="fw-semibold text-muted">SUB TOTAL</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Item -->
+                        <div class="row align-items-center mb-3">
+                            <div class="col-2">
+                                <div style="width: 40px; height: 40px;">
+                                    <img src="" alt="Product" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <h6 class="mb-1 fw-semibold">Pinnaeple Macbook Pro 2022 M1 / 512GB</h6>
+                                <small class="text-muted">x 3</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Shipping -->
+                        <div class="row mb-3 pb-2 border-bottom">
+                            <div class="col-8">
+                                <span>Worldwide Standard Shipping Free</span>
+                            </div>
+                            <div class="col-4 text-end">
+                                <span class="text-success">+ $9.50</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Order Total -->
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <span class="fw-bold">Order Total</span>
+                            </div>
+                            <div class="col-6 text-end">
+                                <span class="fw-bold text-success h5">$1,746.50</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Payment Methods -->
+                        <div class="mb-4">
+                            <!-- Direct Bank Transfer -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="payment" id="bankTransfer" checked>
+                                <label class="form-check-label fw-semibold" for="bankTransfer">
+                                    Direct Bank Transfer
+                                </label>
+                                <div class="mt-2 ps-4">
+                                    <small class="text-muted">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</small>
+                                </div>
+                            </div>
+                            
+                            <!-- Cash on Delivery -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="payment" id="cashOnDelivery">
+                                <label class="form-check-label fw-semibold" for="cashOnDelivery">
+                                    Cash on Delivery
+                                </label>
+                            </div>
+                            
+                            <!-- PayPal -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="payment" id="paypal">
+                                <label class="form-check-label fw-semibold" for="paypal">
+                                    Paypal
+                                </label>
+                                <a href="#" class="text-primary text-decoration-none ms-2">What's Paypal?</a>
+                                <div class="mt-2">
+                                    <img src="" alt="PayPal" style="height: 30px;">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Place Order Button -->
+                        <div class="d-grid">
+                            <button type="button" class="btn phone-village-bg text-white btn-lg fw-semibold">PLACE ORDER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            const placeOrderBtn = document.querySelector('.btn-success');
+            
+            placeOrderBtn.addEventListener('click', function() {
+                if (form.checkValidity()) {
+                    alert('Order placed successfully!');
+                } else {
+                    form.reportValidity();
+                }
+            });
+        });
+    </script>
+
+{% endblock %}
