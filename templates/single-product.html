@@ -2,224 +2,55 @@
 
 {% block content %}
 <div class="container mt-4">
-     <div class="row">
-            <!-- Left Column - Product Images -->
-            <div class="col-lg-5 col-md-6">
-                <div class="row">
-                    <!-- Main Product Image -->
-                    <div class="col-12 mb-4">
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body p-3 position-relative">
-                                <span class="badge bg-dark position-absolute top-0 start-0 m-3">NEW</span>
-                                <div class="text-center" style="height: 400px;">
-                                    <img src="../static/images/pineapple.png" alt="Pinnapple Macbook Pro 2022 M1" class="img-fluid h-100" style="object-fit: contain;" id="mainProductImage">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Thumbnail Images -->
-                    <div class="col-12">
-                        <div class="row g-2">
-                            <div class="col-3">
-                                <div class="card border product-thumbnail active" onclick="changeMainImage(this)">
-                                    <div class="card-body p-2">
-                                        <img src="" alt="Thumbnail 1" class="img-fluid" style="height: 80px; object-fit: contain;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border product-thumbnail" onclick="changeMainImage(this)">
-                                    <div class="card-body p-2">
-                                        <img src="" alt="Thumbnail 2" class="img-fluid" style="height: 80px; object-fit: contain;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border product-thumbnail" onclick="changeMainImage(this)">
-                                    <div class="card-body p-2">
-                                        <img src="" alt="Thumbnail 3" class="img-fluid" style="height: 80px; object-fit: contain;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border product-thumbnail" onclick="changeMainImage(this)">
-                                    <div class="card-body p-2">
-                                        <img src="" alt="Thumbnail 4" class="img-fluid" style="height: 80px; object-fit: contain;">
-                                    </div>
-                                </div>
+    <div class="row">
+        <!-- Left Column - Product Images -->
+        <div class="col-lg-5 col-md-6">
+            <div class="row">
+                <!-- Main Product Image -->
+                <div class="col-12 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-3 position-relative">
+                            <span class="badge bg-dark position-absolute top-0 start-0 m-3">NEW</span>
+                            <div class="text-center" style="height: 400px;">
+                                <img src="../static/images/samsung-main.png" alt="Samsung" class="img-fluid h-100"
+                                    style="object-fit: contain;" id="mainProductImage">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Middle Column - Product Details -->
-            <div class="col-lg-4 col-md-6">
-                <div class="mb-3">
-                    <small class="text-muted">(5)</small>
-                    <h2 class="h3 fw-bold mb-3">Apple Macbook Pro 2022 M1 / 512GB Dark Grey</h2>
-                    
-                    <!-- Brand -->
-                    <div class="mb-4">
-                        <span class="text-muted me-2">Brand:</span>
-                        <strong>Apple</strong>
-                    </div>
-                    
-                    <!-- Price -->
-                    <div class="mb-4">
-                        <h3 class="h2 fw-bold text-dark">₦579.00</h3>
-                    </div>
-                    
-                    <!-- Features -->
-                    <ul class="list-unstyled mb-4">
-                        <li class="mb-2">
-                            <i class="fas fa-circle phone-village-colour me-2" style="font-size: 8px;"></i>
-                            Intel LGA 1700 Socket: Supports 13th & 12th Gen Intel Core
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-circle phone-village-colour me-2" style="font-size: 8px;"></i>
-                            DDR5 Compatible: 4*SMD DIMMs with XMP 3.0 Memory
-                        </li>
-                        <li class="mb-4">
-                            <i class="fas fa-circle phone-village-colour me-2" style="font-size: 8px;"></i>
-                            Commanding Power Design: Twin 16+1+2 Phases Digital VRM
-                        </li>
-                    </ul>
-                    
-                    <!-- Free Shipping -->
-                    <div class="mb-3">
-                        <span class="badge bg-light text-success border px-3 py-2">FREE SHIPPING</span>
-                    </div>
-                    
-                    <!-- Stock Status -->
-                    <div class="mb-4">
-                        <div class="d-flex align-items-center text-success">
-                            <div class="bg-success rounded-circle me-2" style="width: 8px; height: 8px;"></div>
-                            <span class="fw-semibold">In stock</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Quantity and Add to Cart -->
-                    <div class="mb-4">
-                        <label class="form-label fw-semibold">qty</label>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <div class="input-group">
-                                    <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity()">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <input type="number" class="form-control text-center" value="1" id="quantity" min="1">
-                                    <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity()">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
+
+                <!-- Thumbnail Images -->
+                <div class="col-12">
+                    <div class="row g-2">
+                        <div class="col-3">
+                            <div class="card border product-thumbnail active" onclick="changeMainImage(this)">
+                                <div class="card-body p-2">
+                                    <img src="" alt="Thumbnail 1" class="img-fluid"
+                                        style="height: 80px; object-fit: contain;">
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <button class="btn phone-village-bg text-white w-100 fw-semibold">ADD TO CART</button>
-                            </div>
-                            <div class="col-2">
-                                <button class="btn btn-outline-secondary w-100">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                            </div>
                         </div>
-                    </div>
-                    
-                    <!-- Guaranteed Safe Checkout -->
-                    <div class="mb-4">
-                        <p class="mb-2 fw-semibold">Guaranteed Safe Checkout</p>
-                        <div class="d-flex gap-2 align-items-center">
-                            <img src="../static/images/paypal.png" alt="PayPal" style="height: 30px; width: auto;">
-                            <img src="../static/images/visa.png" alt="Visa" style="height: 30px; width: auto;">
-                            <img src="../static/images/mastercard.png" alt="Mastercard" style="height: 30px; width: auto;">
-                            <img src="../static/images/bitcoin.png" alt="Crypto" style="height: 30px; width: auto;">
-                        </div>
-                    </div>
-                    
-                    <!-- Product Details -->
-                    <div class="mb-4">
-                        <div class="row mb-2">
-                            <div class="col-4">
-                                <strong>SKU:</strong>
-                            </div>
-                            <div class="col-8">
-                                ABC025168
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-4">
-                                <strong>CATEGORY:</strong>
-                            </div>
-                            <div class="col-8">
-                                <a href="#" class="text-decoration-none">Cell Phones & Tablets</a>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-4">
-                                <strong>TAGS:</strong>
-                            </div>
-                            <div class="col-8">
-                                <a href="#" class="text-decoration-none me-2">Laptop,</a>
-                                <a href="#" class="text-decoration-none me-2">Macbook,</a>
-                                <a href="#" class="text-decoration-none me-2">Computer,</a>
-                                <a href="#" class="text-decoration-none">M1</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right Column - Cart & Brand -->
-            <div class="col-lg-3">
-                <div class="row">
-                    <!-- Brand Logo -->
-                    <div class="col-12 mb-4">
-                        <div class="text-center">
-                            <img src="../static/images/apple.png" alt="Apple" class="img-fluid" style="max-height: 100px;">
-                        </div>
-                    </div>
-                    
-                    <!-- Cart -->
-                    <div class="col-12">
-                        <div class="card border">
-                            <div class="card-header bg-light">
-                                <h5 class="mb-0 fw-bold">Your Cart</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="me-3" style="width: 60px; height: 60px;">
-                                        <img src="../static/images/pineapple.png" alt="Cart Item" class="img-fluid">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <h6 class="mb-1 fw-semibold">Pinnaeple Macbook Pro 2022 M1 512GB</h6>
-                                        <small class="text-muted">3 x ₦579.00</small>
-                                    </div>
-                                    <button class="btn btn-sm btn-outline-danger">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                                
-                                <hr>
-                                
-                                <div class="row mb-3">
-                                    <div class="col-6">
-                                        <span class="fw-semibold">Sub Total:</span>
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <span class="fw-bold h5">₦1,737.00</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-secondary">VIEW CART</button>
-                                    <button class="btn phone-village-bg text-white">CHECKOUT</button>
+                        <div class="col-3">
+                            <div class="card border product-thumbnail" onclick="changeMainImage(this)">
+                                <div class="card-body p-2">
+                                    <img src="" alt="Thumbnail 2" class="img-fluid"
+                                        style="height: 80px; object-fit: contain;">
                                 </div>
                             </div>
-                            <div class="card-footer bg-light">
-                                <div class="d-flex align-items-center text-muted">
-                                    <i class="fas fa-truck me-2"></i>
-                                    <small>Ships from <strong>United States</strong></small>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border product-thumbnail" onclick="changeMainImage(this)">
+                                <div class="card-body p-2">
+                                    <img src="" alt="Thumbnail 3" class="img-fluid"
+                                        style="height: 80px; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border product-thumbnail" onclick="changeMainImage(this)">
+                                <div class="card-body p-2">
+                                    <img src="" alt="Thumbnail 4" class="img-fluid"
+                                        style="height: 80px; object-fit: contain;">
                                 </div>
                             </div>
                         </div>
@@ -227,29 +58,338 @@
                 </div>
             </div>
         </div>
-        <script>
+
+        <!-- Middle Column - Product Details -->
+        <div class="col-lg-4 col-md-6">
+            <div class="mb-3">
+                <small class="text-muted">(5)</small>
+                <h2 class="h3 fw-bold mb-3">Somseng Galatero X6 Ultra LTE 4G/128GB, Black
+                    Smartphone</h2>
+
+                <!-- Brand -->
+                <div class="mb-4">
+                    <span class="text-muted me-2">Brand:</span>
+                    <strong>Samsung</strong>
+                </div>
+
+                <!-- Price -->
+                <div class="mb-4">
+                    <h3 class="h2 fw-bold text-dark">₦579.00</h3>
+                </div>
+
+                <!-- Features -->
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-2">
+                        <i class="fas fa-circle phone-village-colour me-2" style="font-size: 8px;"></i>
+                        Intel LGA 1700 Socket: Supports 13th & 12th Gen Intel Core
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-circle phone-village-colour me-2" style="font-size: 8px;"></i>
+                        DDR5 Compatible: 4*SMD DIMMs with XMP 3.0 Memory
+                    </li>
+                    <li class="mb-4">
+                        <i class="fas fa-circle phone-village-colour me-2" style="font-size: 8px;"></i>
+                        Commanding Power Design: Twin 16+1+2 Phases Digital VRM
+                    </li>
+                </ul>
+
+                <!-- Free Shipping -->
+                <div class="mb-3">
+                    <span class="badge bg-light text-success border px-3 py-2">FREE SHIPPING</span>
+                </div>
+
+                <!-- Stock Status -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-center text-success">
+                        <div class="bg-success rounded-circle me-2" style="width: 8px; height: 8px;"></div>
+                        <span class="fw-semibold">In stock</span>
+                    </div>
+                </div>
+
+                <!-- Quantity and Add to Cart -->
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">qty</label>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity()">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" class="form-control text-center" value="1" id="quantity" min="1">
+                                <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity()">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn phone-village-bg text-white w-100 fw-semibold">ADD TO CART</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="btn btn-outline-secondary w-100">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guaranteed Safe Checkout -->
+                <div class="mb-4">
+                    <p class="mb-2 fw-semibold">Guaranteed Safe Checkout</p>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="../static/images/paypal.png" alt="PayPal" style="height: 30px; width: auto;">
+                        <img src="../static/images/visa.png" alt="Visa" style="height: 30px; width: auto;">
+                        <img src="../static/images/mastercard.png" alt="Mastercard" style="height: 30px; width: auto;">
+                        <img src="../static/images/bitcoin.png" alt="Crypto" style="height: 30px; width: auto;">
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="mb-4">
+                    <div class="row mb-2">
+                        <div class="col-4">
+                            <strong>SKU:</strong>
+                        </div>
+                        <div class="col-8">
+                            ABC025168
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-4">
+                            <strong>CATEGORY:</strong>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="text-decoration-none text-dark">Cell Phones & Tablets</a>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-4">
+                            <strong>TAGS:</strong>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="text-decoration-none me-2 text-dark">Laptop,</a>
+                            <a href="#" class="text-decoration-none me-2 text-dark">Macbook,</a>
+                            <a href="#" class="text-decoration-none me-2 text-dark">Computer,</a>
+                            <a href="#" class="text-decoration-none text-dark">M1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Cart & Brand -->
+        <div class="col-lg-3">
+            <div class="row">
+                <!-- Brand Logo -->
+                <div class="col-12 mb-4">
+                    <div class="text-center">
+                        <img src="../static/images/samsung-logo.png" alt="Apple" class="img-fluid"
+                            style="max-height: 100px;">
+                    </div>
+                </div>
+
+                <!-- Cart -->
+                <div class="col-12">
+                    <div class="card border">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0 fw-bold">Your Cart</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3" style="width: 60px; height: 60px;">
+                                    <img src="../static/images/pineapple.png" alt="Cart Item" class="img-fluid">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1 fw-semibold">Pinnaeple Macbook Pro 2022 M1 512GB</h6>
+                                    <small class="text-muted">3 x ₦579.00</small>
+                                </div>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+
+                            <hr>
+
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <span class="fw-semibold">Sub Total:</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="fw-bold h5">₦1,737.00</span>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-secondary">VIEW CART</button>
+                                <a class="btn phone-village-bg text-white" href="{{ url_for('checkout') }}">
+                                    CHECKOUT
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="d-flex align-items-center text-muted">
+                                <i class="fas fa-truck me-2"></i>
+                                <small>Ships from <strong>United States</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="container mt-4">
+        <ul class="nav nav-tabs mb-4" id="productTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-dark" id="description-tab" data-bs-toggle="tab"
+                    data-bs-target="#description" type="button" role="tab">
+                    DESCRIPTION
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                    type="button" role="tab">
+                    REVIEWS (5)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="additional-tab" data-bs-toggle="tab" data-bs-target="#additional"
+                    type="button" role="tab">
+                    ADDITIONAL INFORMATION
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="productTabsContent">
+        <div class="tab-pane fade show active" id="description" role="tabpanel">
+            <div class="container">
+                <!-- Product Description -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <p class="lead text-muted">
+                            Built for ultra-fast performance, the thin and lightweight Samsung Galaxy Tab S2 goes
+                            anywhere you go. Photos, movies and documents pop on a crisp, clear Super AMOLED display.
+                            Expandable memory lets you enjoy more of your favorite content. And connecting and sharing
+                            between all your Samsung devices is easier than ever. Welcome to life with the reimagined
+                            Samsung Galaxy Tab S2. Watch the world come to life on your tablet's <strong>Super AMOLED
+                                display</strong> *. With deep contrast, rich colors and crisp details, you won't miss a
+                            thing
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hero Section with Product Image -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div
+                            class="hero-section d-flex align-items-center justify-content-center position-relative rounded-3">
+                            <img src="../static/images/samsung.png" alt="Samsung Galaxy Tab S2 in hand"
+                                class="product-image img-fluid" style="max-height: 400px;">
+                        </div>
+                        <p class="text-center text-muted mt-3 fst-italic">
+                            * The Galaxy Tab S2's 4 : 3 ratio display provides you with an ideal environment for
+                            performing office tasks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- From the Manufacturer Section -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-4">From the manufacturer</h3>
+                        <p class="mb-4">
+                            Dive into the blockbuster movies you can't wait to see. Switch between your favorite apps
+                            quickly and easily. The new and improved octa-core processor gives you the power and speed
+                            you need to see more and do more. Expand your tablet's memory from 32GB to up to an
+                            additional 128GB and enjoy more of your favorite music, photos, movies and games on the go
+                            with a microSD card. With Quick Connect, start a show on your Smart TV and, with the touch
+                            of a button, take it with you by moving it to your Galaxy Tab S2.
+                        </p>
+                        <p class="mb-4">
+                            Or send videos and photos from your tablet screen to your TV screen to share with everyone
+                            in the room. Work effortlessly between your Samsung tablet and Samsung smartphone with
+                            SideSync. Quickly drag and drop photos between devices. And even respond to a call from your
+                            smartphone right on your tablet screen.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Images Section -->
+                <div class="row mb-5">
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-card shadow-sm">
+                            <img src="../static/images/man-tablet.png" alt="Man using tablet" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-card shadow-sm">
+                            <img src="../static/images/samsung2.png" alt="Tablet showing apps" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Title and Description -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="mb-4">Samsung Galaxy Tab S2, 8-Inch, White</h2>
+                        <p class="mb-4">
+                            The Samsung Galaxy Tab S2 offers dual cameras: a rear-facing 8-megapixel camera with Auto
+                            Focus and a 2.1-megapixel camera on the front. Take high-quality pictures and video or video
+                            chat with friends, family, and colleagues. Customize your Galaxy Tab S2 with the apps you
+                            use most. The Samsung Galaxy Essentials widget provides a collection of premium
+                            complimentary apps optimized for your tablet screen. Select and download the apps you want
+                            to instantly upgrade your tablet experience.
+                        </p>
+                        <!-- <a href="#" class="btn-show-more">SHOW MORE</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Tab -->
+        <div class="tab-pane fade" id="reviews" role="tabpanel">
+            <div class="container">
+                <h3>Customer Reviews</h3>
+                <p class="text-muted">5 reviews for Samsung Galaxy Tab S2</p>
+                <!-- Review content would go here -->
+            </div>
+        </div>
+
+        <!-- Additional Information Tab -->
+        <div class="tab-pane fade" id="additional" role="tabpanel">
+            <div class="container">
+                <h3>Additional Information</h3>
+                <p class="text-muted">Technical specifications and additional details would go here.</p>
+                <!-- Additional info content would go here -->
+            </div>
+        </div>
+    </div>
+    <script>
         // Thumbnail click functionality
         function changeMainImage(thumbnail) {
             // Remove active class from all thumbnails
             document.querySelectorAll('.product-thumbnail').forEach(thumb => {
                 thumb.classList.remove('active');
             });
-            
+
             // Add active class to clicked thumbnail
             thumbnail.classList.add('active');
-            
+
             // Update main image (in real implementation, you'd change the src)
             const img = thumbnail.querySelector('img');
             const mainImg = document.getElementById('mainProductImage');
             mainImg.src = img.src;
         }
-        
+
         // Quantity controls
         function increaseQuantity() {
             const input = document.getElementById('quantity');
             input.value = parseInt(input.value) + 1;
         }
-        
+
         function decreaseQuantity() {
             const input = document.getElementById('quantity');
             if (parseInt(input.value) > 1) {
